@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CartItem from '../CartItem';
 
 import currencyFormatter  from '../../helpers/formatter';
