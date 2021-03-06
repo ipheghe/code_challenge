@@ -32,7 +32,7 @@ export default function CartItem (props: CartItemProps) {
             <div className="img__container">
                 <img className="cartItem__image" src={props.image_url} alt="product_image" />
             </div>
-            <button className="close__btn" onClick={() => props.removeItem(props.id)}>X</button>
+            <button className="close__btn" onClick={() => props.removeItem(props.id)}> &times;</button>
         </div>
     )
 }

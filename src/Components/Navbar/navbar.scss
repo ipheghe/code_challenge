@@ -35,8 +35,8 @@
             }
 
             .label {
-                border-radius: 40%;
-                background-color: red;
+                border-radius: 50%;
+                background-color: #4b5548;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -49,7 +49,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 564px) {
 
     .div_content {
         display: flex;

@@ -13,7 +13,6 @@
             object-fit: contain;
             max-width: 153px;
             max-height: 170px;
-            flex: 1 1 0%;
         }
     }
 
@@ -21,6 +20,10 @@
     .product__title {
         font-size: 16px;
         line-height: 24px;
+        white-space: nowrap; 
+        width: 100%; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
     }
 
     .product__price {
@@ -45,5 +48,11 @@
         max-width: 157px;
         white-space: normal;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .product__title {
+        width: 153px;  
     }
 }

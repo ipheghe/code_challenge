@@ -1,6 +1,6 @@
 .productList__container {
-    height: 100%;
     width: 100%;
+    max-width: 100%;
     padding: 20px 15%;
     background-color: #f5f5f4;
     display: grid;
@@ -17,9 +17,16 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
+    .productList__container {
+        grid-template-columns: repeat(2, 200px);
+        padding: 20px;
+        grid-row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
     .productList__container {
         grid-template-columns: 1fr;
-        padding: 20px;
     }
 }
