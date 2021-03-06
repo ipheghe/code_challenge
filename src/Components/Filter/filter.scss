@@ -1,0 +1,97 @@
+.filter__container {
+    width: 100%;
+    padding: 80px 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    justify-content: center;
+
+    .title__caption {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+            font-size: 46px;
+            line-height: 20px;
+            color: black;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: black;
+        }
+    }
+
+    .select__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .filter__input {
+            height: 58px;
+            width: 100%;
+            max-width: 400px;
+            padding: 2px 20px;
+            border: 1px solid rgb(205, 209, 206);
+            outline: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .filter__container {
+        padding: 80px 10%;
+    
+        .title__caption {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+    
+            h2 {
+                font-size: 36px;
+                line-height: 20px;
+                color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .filter__container {
+        padding: 80px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    
+        .title__caption {
+            align-items: center;
+            margin-bottom: 10px;
+            h2 {
+                font-size: 36px;
+                line-height: 20px;
+                color: black;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                color: black;
+                margin: 0;
+            }
+        }
+    
+        .select__container {
+            justify-content: center;
+            .filter__input {
+                width: 100%;
+                max-width: 80%;
+            }
+        }
+    }
+}

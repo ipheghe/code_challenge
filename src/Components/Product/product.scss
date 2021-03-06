@@ -1,0 +1,49 @@
+.product__container {
+    padding: 10px 20px;
+    padding-bottom: 5px;
+
+    .img__container {
+        min-height: 153px;
+        height: 153px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .product__image {
+            object-fit: contain;
+            max-width: 153px;
+            max-height: 170px;
+            flex: 1 1 0%;
+        }
+    }
+
+
+    .product__title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product__price {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .product__cart-btn {
+        appearance: none;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: 0px;
+        line-height: 1.2;
+        font-weight: 600;
+        font-family: "FF Bau Regular", sans-serif;
+        padding: 2px 16px;
+        min-height: 52px;
+        background: rgb(75, 85, 72);
+        color: rgb(252, 252, 249);
+        width: 100%;
+        max-width: 157px;
+        white-space: normal;
+        cursor: pointer;
+    }
+}
