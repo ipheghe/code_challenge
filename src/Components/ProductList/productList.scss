@@ -19,15 +19,16 @@
 
 @media screen and (max-width: 600px) {
     .productList__container {
-        grid-template-columns: repeat(2, 200px);
-        padding: 20px;
+        grid-template-columns: repeat(2, 50%);
+        padding: 20px 10px;
         grid-row-gap: 10px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .productList__container {
-        grid-template-columns: repeat(2, 120px);
+        grid-template-columns: repeat(2, 50%);
+        justify-content: center;
     }
 }
 
