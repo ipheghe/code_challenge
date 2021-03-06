@@ -14,6 +14,7 @@ export default function Navbar (props: NavbarProps) {
     <nav className="nav__container">
       <div className="div_content">
         <div className="image__container">
+          <h3>LUMIN</h3>
           <img src="https://store.luminskin.com/_next/static/images/logo-20c2cb1d9d2bb6d2139d0e5cec3103bd.png" alt="site_logo" />
         </div>
         <a href="#" className="nav__item first">Shop</a>

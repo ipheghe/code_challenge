@@ -49,15 +49,17 @@ export default function Filter () {
                 <p>{filters[value].tagline}</p>
             </div>
             <div className="select__container">
-                <select value={value} onChange={handleSelectChange} className="filter__input">
-                    <option value="filter_by">Filter By</option>
-                    <option value="all_products">All Products</option>
-                    <option value="new_products">New Products</option>
-                    <option value="sets">Sets</option>
-                    <option value="skin_care">Skin Care</option>
-                    <option value="hair_and_body_care">Har & Body Care</option>
-                    <option value="accessories">Accessories</option>
-                </select>
+                <div className="select__subcontainer">
+                    <select value={value} onChange={handleSelectChange} className="filter__input">
+                        <option value="filter_by">Filter By</option>
+                        <option value="all_products">All Products</option>
+                        <option value="new_products">New Products</option>
+                        <option value="sets">Sets</option>
+                        <option value="skin_care">Skin Care</option>
+                        <option value="hair_and_body_care">Har & Body Care</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
             </div>
         </div>
     )

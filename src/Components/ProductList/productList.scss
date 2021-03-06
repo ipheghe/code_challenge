@@ -25,6 +25,12 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .productList__container {
+        grid-template-columns: repeat(2, 120px);
+    }
+}
+
 @media screen and (max-width: 300px) {
     .productList__container {
         grid-template-columns: 1fr;

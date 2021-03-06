@@ -56,3 +56,17 @@
         width: 153px;  
     }
 }
+
+@media screen and (max-width: 400px) {
+    .img__container {
+        min-height: 100px;
+        height: 100px;
+
+        .product__image {
+            object-fit: contain;
+            max-width: 100px !important;
+            width: 100px;
+            max-height: 120px;
+        }
+    }
+}
